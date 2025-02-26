@@ -37,10 +37,11 @@ def profile():
         "Username": "@k_mac",
         "Location": "Kingston, Jamaica",
         "Date_Joined": format_date_joined(2025, 2, 26),
-        "Bio": "I am a 22-year-old Computer Science major in his third year of study. Hailing from the vibrant city of Montego Bay, he is a proud alumnus of Cornwall College. Currently serving as the Hall Chairman of Taylor Hall, Keshawn demonstrates strong leadership skills alongside his academic pursuits, embodying a balance of dedication both in and out of the classroom.",
+        "Bio": "I am a 22-year-old Computer Science major in my third year of study. Hailing from the vibrant city of Montego Bay, I am a proud alumnus of Cornwall College. Currently serving as the Hall Chairman of Taylor Hall, I demonstrate strong leadership skills alongside my academic pursuits, embodying a balance of dedication both in and out of the classroom.",
         "Posts": 7,
-        "Followers": 100,
-        "Following": 250
+        "Following": 1270,
+        "Followers": 1185
+        
     }
     
     return render_template('profile.html', user=user_info)

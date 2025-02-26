@@ -1,7 +1,7 @@
 body {
     padding-top: 5rem;
     text-align: center;
-    width: 35%;
+    width: 30%;
     margin: 0 auto;
 }
 
@@ -51,7 +51,7 @@ p {
 }
 
 .btn-primary {
-    padding: 8px 45px;
+    padding: 6px 45px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -73,6 +73,8 @@ p {
 .bio {
     color: #808080;
     padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .secondary-info {
@@ -92,4 +94,8 @@ p {
 
 .txt {
     color: #808080;
+}
+
+.d_joined {
+    padding-bottom: 10px;
 }
