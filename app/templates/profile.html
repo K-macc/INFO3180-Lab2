@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="main-info">
+    <img src="{{ url_for('static', filename='images/me.jpg') }}" alt="Me" /> 
+
+    <div class="user-info">
+        <h3 class ="name">{{ user.Name }}</h3>
+        <p class="uname"> {{ user.Username }} </p>
+        <p class="location"> {{ user.Location }} </p>
+        <p class="d_joined"> {{ user.Date_Joined }} </p>
+    </div>
+</div>
+
+<div class="secondary-info">
+    <p class="bio"> {{ user.Bio }} </p>
+
+    <div class="socials">
+        <div class="posts">
+            <p class="sc"> {{ user.Posts }} </p>
+            <p class="txt">Posts</p>
+        </div>
+        <div class="followers">
+            <p class="sc"> {{ user.Followers }} </p>
+            <p class="txt">Followers</p>
+        </div>
+        <div class="following">
+            <p class="sc"> {{ user.Following }} </p>
+            <p class="txt">Following</p>
+        </div>
+    </div>
+    
+    <div class="follow-btn">
+        <button class="btn btn-primary">Follow</button>
+    </div>
+</div>
+
+{% endblock %}
+

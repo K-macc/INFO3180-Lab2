@@ -1,5 +1,6 @@
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+import datetime
 
 
 ###
@@ -28,6 +29,22 @@ def send_text_file(file_name):
     file_dot_text = file_name + '.txt'
     return app.send_static_file(file_dot_text)
 
+@app.route('/profile')
+def profile():
+    
+    user_info = {
+        "Name": "Keshawn McGrath",
+        "Username": "@k_mac",
+        "Location": "Kingston, Jamaica",
+        "Date_Joined": format_date_joined(2025, 2, 26),
+        "Bio": "I am a 22-year-old Computer Science major in his third year of study. Hailing from the vibrant city of Montego Bay, he is a proud alumnus of Cornwall College. Currently serving as the Hall Chairman of Taylor Hall, Keshawn demonstrates strong leadership skills alongside his academic pursuits, embodying a balance of dedication both in and out of the classroom.",
+        "Posts": 7,
+        "Followers": 100,
+        "Following": 250
+    }
+    
+    return render_template('profile.html', user=user_info)
+
 
 @app.after_request
 def add_header(response):
@@ -45,3 +62,8 @@ def add_header(response):
 def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
+
+
+def format_date_joined(y,m,d):
+    date_joined = datetime.date(y,m,d)
+    return "Joined " + date_joined.strftime('%B, %Y')
