@@ -16,7 +16,7 @@ def home():
 @app.route('/about/')
 def about():
     """Render the website's about page."""
-    return render_template('about.html', name="Mary Jane")
+    return render_template('about.html', name="Keshawn McGrath")
 
 
 ###
@@ -37,10 +37,10 @@ def profile():
         "Username": "@k_mac",
         "Location": "Kingston, Jamaica",
         "Date_Joined": format_date_joined(2025, 2, 26),
-        "Bio": "I am a 22-year-old Computer Science major in my third year of study. Hailing from the vibrant city of Montego Bay, I am a proud alumnus of Cornwall College. Currently serving as the Hall Chairman of Taylor Hall, I demonstrate strong leadership skills alongside my academic pursuits, embodying a balance of dedication both in and out of the classroom.",
+        "Bio": "I am a 22-year-old Computer Science major in his third year of study. Hailing from the vibrant city of Montego Bay, I am a proud alumnus of Cornwall College. Currently serving as the Hall Chairman of Taylor Hall and the incoming Vice-President of Properties and Special Initiatives for the guild, I demonstrate strong leadership skills alongside my academic pursuits, embodying a balance of dedication both in and out of the classroom. I am also usually an outgoing persons, whose hobbies surround mainly playing volleyball.",
         "Posts": 7,
-        "Following": 1270,
-        "Followers": 1185
+        "Following": 1285,
+        "Followers": 1224
         
     }
     
