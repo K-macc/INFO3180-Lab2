@@ -98,3 +98,7 @@ p {
 .d_joined {
     padding-bottom: 10px;
 }
+
+.nav-link.active {
+    color:white;
+}
